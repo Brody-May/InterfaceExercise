@@ -41,9 +41,24 @@ namespace InterfaceExercise
             //Now, create objects of your 3 classes and give their members values;
             //Creatively display and organize their values
             var car = new Car();
+            car.Make = "Tesla";
+            car.Model = "Model 3";
+            car.NumberOfWheels = 4;
+            car.EngineSize= 4.6;
+            
             var truck = new Truck();
+            truck.Make = "Toyota";
+            truck.Model = "Tundra";
+            truck.NumberOfWheels = 4;
+            truck.EngineSize = 14.8;
+            
             var suv = new SUV();
-            var vehicles = new List<IVehicle>() {car, truck};
+            suv.Make = "Honda";
+            suv.Model = "Passport";
+            suv.NumberOfWheels = 4;
+            suv.EngineSize = 6;
+            
+            var vehicles = new List<IVehicle>() {car, truck, suv};
             
             foreach(var vehicle in vehicles) 
             {
